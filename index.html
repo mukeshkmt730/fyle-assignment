@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+    <!-- 1 Owl carousel  min.css     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 2 Owl carousel  theme Min .css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <style>
+        .owl-nav {
+            display: none;
+        }
+
+        .owl-dots {
+            position: absolute;
+
+        }
+
+        .owl-dots button.owl-dot.active {
+            border: 1px solid red;
+            border-radius: 50%;
+        }
+
+        .owl-theme .owl-dots button.owl-dot span {
+            background: black;
+        }
+
+        .owl-theme .owl-dots button.owl-dot.active span {
+            background: red;
+        }
+
+
+        .card1 {
+            height: 450px;
+            background: rgb(233, 61, 90);
+        }
+
+        .card-hover {
+            display: none;
+        }
+
+        .icon {
+            margin: auto;
+            margin-top: 25%;
+            width: 25%;
+        }
+
+        .card1:hover .card-img-top {
+            display: none;
+        }
+
+
+        .card1:hover .card-hover {
+            display: block;
+        }
+
+
+        .mybtn {
+            font-size: small;
+            font-weight: bold;
+            color: rgb(233, 61, 90);
+        }
+
+
+        .card-icon {
+            margin-left: 5%;
+            width: 20%;
+        }
+
+        .myrow {
+            cursor: pointer;
+        }
+
+        .myclass {
+            color: white;
+            background-color: rgb(240, 50, 82);
+        }
+
+        #Img1 {
+            display: none;
+        }
+
+        #Img2 {
+            display: block;
+        }
+
+        #Img3 {
+            display: none;
+        }
+
+
+        .card-i {
+            margin: auto;
+            width: 15%;
+        }
+    </style>
+
+
+
+
+
+    <title>Fyle Assignment</title>
+</head>
+
+<body>
+
+
+    <!-- AWARD WINNING Section -->
+    <div class="container me-0 ps-5 my-5  pt-5">
+
+        <div class="row featurette d-flex justify-content-center align-items-center ">
+            <div class="col-md-5 mb-5">
+                <h3 class="featurette-heading text-danger  my-1"> AWARD WINNING</h3>
+                <h1 class="featurette-heading display-5  fw-bold my-3 "> DIGITAL MARKETING AGENCY</h1>
+
+                <p class="lead fs-6 my-4">Morbi sed lacus nec risus finibut feugiat et fermetum nibh. Pelletesque vitae
+                    ante
+                    at
+                    elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#contactModal"
+                    data-bs-whatever="@getbootstrap">CONTACT US</button>
+            </div>
+            <div class="col-md-7">
+                <img src="/Images/img4.jpg" alt="" class="img-lg featurette-image img-fluid mx-auto" width="800"
+                    height="600">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- POP-UP FORM -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Talk to us</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="https://getform.io/f/4d0a50f0-fea8-46b7-a240-eb9bd88c2627">
+                        <div class="mb-4">
+                            <label class="form-label">Work email</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">First name*</label>
+                                <input type="text" name="firstname" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Last name*</label>
+                                <input type="text" name="lastname" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label fw-light">I agree to Fyle's terms and
+                                conditions.
+                                and provide consent to send me communications</label>
+                        </div>
+
+                        <button type="submit" class="btn-lg btn-danger my-2 w-100">Contact Us</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- WHAT WE DO SECTION -->
+    <section class="my-5 py-5" style="margin-top: 10vw;">
+        <div class="container  me-0 ps-5 my-5 ">
+            <div class="header1 my-5">
+                <h5 class="text-danger   my-4">WHAT WE DO</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1 class="fw-bold">SERVICES PROVIDE FOR YOU</h1>
+                    </div>
+                    <div class="col-md-8 ">
+                        <p class="mx-5 px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt
+                            corporis libero
+                            quo
+                            totam culpa voluptate saepe! Adipisci en sfhdsj fdi im minima saepe, earum
+                            laudantium dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row ">
+
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider1.jpg" alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 1</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider2.jpg" alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 2</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider3.jpg" alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 3</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider4.jpg" alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 4</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider5.jpg" alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 5</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider6.jpg" alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 6</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider7.jpg " alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 7</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider8.jpg " alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 8</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider9.jpg " alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 9</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider10.jpg " alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 10</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider11.jpg " alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 11</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mb-4">
+                        <div class="card card1 border-0 shadow mx-2">
+                            <img src="Images/slider12.jpg" alt="image" class="card-img-top h-100">
+
+                            <div class="card-hover text-center text-light mx-2 ">
+                                <div class="icon">
+                                    <img src="Images/icon.png" alt="">
+                                </div>
+
+                                <h4 class="mt-3">WEB DEVELOPMENT 12</h4>
+
+                                <p class="mt-3">Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                                    Prllentesque</p>
+
+                                <a href="https://www.fylehq.com" target="_blank">
+                                    <button type="button" class="btn btn-light btn-lg mt-4 mybtn">READ MORE --></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- WHY CHOOSE US SECTION -->
+    <div class="container">
+        <div class="text-center">
+            <h4 class="text-danger my-3">WHY CHOOSE US </h4>
+            <h1 class="fw-bold">WHY WE ARE BEST</h1>
+        </div>
+
+        <div class="row mx-5 p-5 ">
+            <div class="col-md-3">
+                <div class="card h-100 ">
+                    <div class="card-icon">
+                        <img src="Images/icon1.png" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Clarified Vision & Target</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-icon">
+                        <img src="Images/icon2.png" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">High Performance</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-icon">
+                        <img src="Images/icon3.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Maintain Security</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-icon">
+                        <img src="Images/icon4.png" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Better Strategy & Quality</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- OUR PROJECT SECTION -->
+    <div class="container my-5">
+        <div class="text-center">
+            <h4 class="text-danger my-3">OUR PROJECT</h4>
+            <h1 class="fw-bold">WHY WE ARE BEST</h1>
+        </div>
+
+        <div class="row my-5 " style="width: 80%;margin: auto;">
+            <div class="col-md-8 " id="Img1">
+                <img src="Images/fruits1.jpg" alt="" class="img-fluid h-100 ">
+            </div>
+            <div class="col-md-8" id="Img2">
+                <img src="Images/fruits2.jpg" alt="" class="img-fluid h-100 ">
+            </div>
+            <div class="col-md-8" id="Img3">
+                <img src="Images/fruits3.jpg" alt="" class="img-fluid h-100 ">
+            </div>
+            <div class="col-md-4">
+                <div class="row shadow-lg myrow ps-2" onmouseover="myOverFunction1()">
+                    <h6 class="my-3 fw-bold">Genderiess Kei - Japan's Hot</h6>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ullam. Sed possimus magni
+                        ipsum enim.</p>
+                </div>
+                <div class="row shadow-lg myrow ps-2 myclass" onmouseover="myOverFunction2()">
+                    <h6 class="my-3 fw-bold">Better Strategy & Quality</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ullam. Sed possimus magni
+                        ipsum enim.</p>
+                </div>
+                <div class="row shadow-lg myrow ps-2" onmouseover="myOverFunction3()">
+                    <h6 class="my-3 fw-bold">Genderless Kei - Japan's Hot</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ullam. Sed possimus magni
+                        ipsum enim.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EXPERTS GROWTHS SECTION -->
+    <div style="margin-top: 10vw;">
+        <div class="text-center">
+            <h4 class="text-danger my-3">EXPERTS GROWTHS</h4>
+            <h1 class="fw-bold">OWR COMPANY GROWTH</h1>
+        </div>
+
+        <div class="row my-4 mb-5" style="width: 80%;margin: auto;">
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-i mt-4">
+                        <img src="Images/like.png" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h1 class="card-title display-5 fw-bold ">199+</h1>
+                        <h6> Staticfied Customers</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-i mt-4">
+                        <img src="Images/time.png" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h1 class="card-title display-5 fw-bold  ">1591+</h1>
+                        <h6>Days of Operation</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-i mt-4">
+                        <img src="Images/complete.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h1 class="card-title display-5 fw-bold  ">283+</h1>
+                        <h6> Complete Project</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm ">
+                    <div class="card-i mt-4">
+                        <img src="Images/award.png" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h1 class="card-title display-5 fw-bold  ">75+</h1>
+                        <h6> Win Awards</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- CLIENT'S FEEDBACK SECTION -->
+    <div style="margin: 5vw;">
+        <div class="text-center">
+            <h4 class="text-danger my-3">CLIENT'S FEEDBACK</h4>
+            <h1 class="fw-bold">PEOPLE SAY'S ABOUT US!</h1>
+        </div>
+
+        <div class=" my-5" style="width: 50%;margin: auto;">
+            <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus aliquam earumsfdsghd minima eum
+                quibusdam, dolores sapiente architecto! Ipsam, deleniti.</h6>
+            <h5 class="text-danger fw-bold mt-3">JANNAT TUMPA <span class="text-dark fw-light">- COO AMERIMAR
+                    ENTERPRISES, INC.</span></h5>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class=" bg-danger mt-5  px-5" style="height: 17vw;">
+        <div class="row " style="margin: auto;width: 70%;">
+            <div class="col-2 mx-auto " style="margin-top: 6%; padding: 6%;"><img class="img-fluid"
+                    src="Images/twitter.png" alt="" style="width: 100%;cursor: pointer;"></div>
+            <div class="col-2 mx-auto " style="margin-top: 6%; padding: 6%;"><img class="img-fluid"
+                    src="Images/facebook.png" alt="" style="width: 100%;cursor: pointer;"></div>
+            <div class="col-2 mx-auto " style="margin-top: 6%; padding: 6%;"><img class="img-fluid"
+                    src="Images/twitter2.png" alt="" style="width: 100%;cursor: pointer;"></div>
+            <div class="col-2 mx-auto " style="margin-top: 6%; padding: 6%;"><img class="img-fluid"
+                    src="Images/instagram.png" alt="" style="width: 100%;cursor: pointer;"></div>
+            <div class="col-2 mx-auto " style="margin-top: 6%; padding: 6%;"><img class="img-fluid"
+                    src="Images/instagram2.png" alt="" style="width: 100%;cursor: pointer;"></div>
+            <div class="col-2 mx-auto " style="margin-top: 6%; padding: 6%;"><img class="img-fluid"
+                    src="Images/youtube.png" alt="" style="width: 100%;cursor: pointer; margin-top: 20%;"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+
+    <!-- include cdn files -->
+    <!-- 0. Jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- 1. Owl carousel  min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Init Owl carousel  -->
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            center: false,
+            nav: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            navigation: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                },
+
+                1500: {
+                    items: 4
+                },
+                2000: {
+                    items: 5
+                },
+                2500: {
+                    items: 6
+                }
+
+            }
+        });
+
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.originalEvent.deltaY > 0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
+        });
+
+
+        $(".card").hover(
+            function () {
+                $(this).addClass('shadow-lg').css('cursor', 'pointer');
+            }, function () {
+                $(this).removeClass('shadow-lg');
+            }
+        );
+
+        myOverFunction1 = () => {
+            document.getElementsByClassName('myrow')[0].classList.add('myclass')
+            document.getElementsByClassName('myrow')[1].classList.remove('myclass')
+            document.getElementsByClassName('myrow')[2].classList.remove('myclass')
+
+            document.getElementById('Img1').style.display = "block";
+            document.getElementById('Img2').style.display = "none";
+            document.getElementById('Img3').style.display = "none";
+        }
+
+        myOverFunction2 = () => {
+            document.getElementsByClassName('myrow')[0].classList.remove('myclass')
+            document.getElementsByClassName('myrow')[1].classList.add('myclass')
+            document.getElementsByClassName('myrow')[2].classList.remove('myclass')
+
+            document.getElementById('Img1').style.display = "none";
+            document.getElementById('Img2').style.display = "block";
+            document.getElementById('Img3').style.display = "none";
+        }
+
+        myOverFunction3 = () => {
+            document.getElementsByClassName('myrow')[0].classList.remove('myclass')
+            document.getElementsByClassName('myrow')[1].classList.remove('myclass')
+            document.getElementsByClassName('myrow')[2].classList.add('myclass')
+
+            document.getElementById('Img1').style.display = "none";
+            document.getElementById('Img2').style.display = "none";
+            document.getElementById('Img3').style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
